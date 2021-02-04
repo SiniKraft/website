@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: SiniKraft Website
 description: Welcome on the SiniKraft's Website !
+basurl: '/lanyon/'
