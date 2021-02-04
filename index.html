@@ -1,1 +1,21 @@
-
+<html>
+   <head>
+      <script type = "text/javascript">
+         var userLang = navigator.language || navigator.userLanguage;
+         <!--
+            function Redirect() {
+               window.location = (userLang + "/index.html");
+            }
+         //-->
+      </script>
+   </head>
+   
+   <body>
+      <p>Click the following button, you will be redirected to home page.</p>
+      
+      <form>
+         <input type = "button" value = "Redirect Me" onclick = "Redirect();" />
+      </form>
+      
+   </body>
+</html>
