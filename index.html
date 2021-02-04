@@ -7,7 +7,17 @@
                window.location = (userLang + "/index.html");
             }
          //-->
-         Redirect();
+         if (userLang == "fr") {
+           Redirect();
+         } else if (userLang == "en") {
+           Redirect();
+           } else {
+           <!--
+            function RedirectDefault() {
+               window.location = ("en/index.html");
+            }
+            }
+         //-->
       </script>
    </head>
 </html>
