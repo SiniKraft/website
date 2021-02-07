@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <script type = "text/javascript">
+         var userLang = navigator.language || navigator.userLanguage;
+         <!--
+            function Redirect(lang) {
+               window.location = (lang + "/");
+               alert("Detected language : " + userLang + "\n" + "Set language : " + lang)
+            }
+         //-->
+         if (userLang == "fr") {
+           Redirect("fr");
+         } else if (userLang == "en") {
+           Redirect("en");
+           } else if (userLang == "fr-FR" || userLang == "fr-CH" || userLang == "fr-CA" || userLang == "fr-BE") {
+            Redirect("fr"); } else {
+              Redirect("en");
+            }
+         //-->
+      </script>
+   </head>
+</html>

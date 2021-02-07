@@ -1,24 +1,7 @@
 <html>
    <head>
       <script type = "text/javascript">
-         var userLang = navigator.language || navigator.userLanguage;
-         <!--
-            function Redirect() {
-               window.location = (userLang + "/");
-            }
-         //-->
-         if (userLang == "fr") {
-           Redirect();
-         } else if (userLang == "en") {
-           Redirect();
-           } else {
-           <!--
-            function RedirectDefault() {
-               window.location = ("en/");
-            }
-              RedirectDefault();
-            }
-         //-->
+         var userLang=navigator.language||navigator.userLanguage;function Redirect(lang){window.location=(lang + "/");}if(userLang == "fr"){Redirect("fr");}else if(userLang == "en"){Redirect("en");}else if(userLang == "fr-FR"||userLang == "fr-CH"||userLang=="fr-CA"||userLang=="fr-BE"){Redirect("fr");}else{Redirect("en");}
       </script>
    </head>
 </html>
