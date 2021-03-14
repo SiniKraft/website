@@ -6,17 +6,13 @@
     <meta charset="utf-8"/>
     <script>
       const queryString = window.location.search;
-      console.log(queryString);
       const urlParams = new URLSearchParams(queryString);
+      if !(urlParams.has("target")) {
+        console.log("True");
+      } else {
+        console.log("False");
+      }
       const size = urlParams.get('size');
-      alert(size);
-      // s
-      const color = urlParams.get('color')
-      alert(color);
-      // black      
-      const newUser = urlParams.get('newuser')
-      alert(newUser);
-      // empty string
     </script>
   </body>
 </html>
