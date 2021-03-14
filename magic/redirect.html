@@ -10,6 +10,9 @@
       const urlParams = new URLSearchParams(queryString);
       if (urlParams.has("target")) {
         console.log("Redirecting ...");
+        if (urlParams.get("target") == "arouf-gangsta") {
+          window.location.replace("http://youre.gay");
+        }
       } else {
         console.log("Missing target argument, printing error ...");
         document.getElementById("demo").innerHTML = "Missing target argument !";
