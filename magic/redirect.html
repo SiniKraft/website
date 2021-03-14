@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
     <p id="demo"></p>
-    <script data-main="scripts/main" src="../require.js"></script>
     <script type="text/javascript">
-      var json = require('./data.json');
+      $.getJSON("data.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+     });
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       if (urlParams.has("target")) {
