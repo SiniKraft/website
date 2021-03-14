@@ -11,13 +11,11 @@
         console.log("Redirecting ...");
       } else {
         console.log("Missing target argument, printing error ...");
-        document.getElementById("error") = "Missing target argument !";
+        document.write("Missing target argument !");
       }
       const size = urlParams.get('size');
     </script>
   </head>
   <body>
-    <p id="error">
-    </p>
   </body>
 </html>
