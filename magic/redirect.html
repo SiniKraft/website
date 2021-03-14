@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title> </title>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <script>
+      const urlParams = new URLSearchParams("https://example.com/?product=troussers&color=black&newuser&size=s");
+      const size = urlParams.get('size');
+      alert(size);
+      // s
+      const color = urlParams.get('color')
+      alert(color);
+      // black      
+      const newUser = urlParams.get('newuser')
+      alert(newUser);
+      // empty string
+    </script>
+  </head>
+</html>
