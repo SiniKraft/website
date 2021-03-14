@@ -7,7 +7,7 @@
     <script>
       const queryString = window.location.search;
       console.log(queryString);
-      const urlParams = new URLSearchParams("https://example.com/?product=troussers&color=black&newuser&size=s");
+      const urlParams = new URLSearchParams(queryString);
       const size = urlParams.get('size');
       alert(size);
       // s
