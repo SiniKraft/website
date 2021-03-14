@@ -15,7 +15,7 @@
       if (urlParams.has("target")) {
         console.log("Redirecting ...");
         var obj = JSON.parse(json);
-        eval("window.location.replace(obj." + urlParams.get("target") + ");"),
+        eval("window.location.replace(obj." + urlParams.get("target") + ");")
       } else {
         console.log("Missing target argument, printing error ...");
         document.getElementById("demo").innerHTML = "Missing target argument !";
