@@ -8,7 +8,7 @@
     <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
       $.getJSON("data.json", function(json) {
-    console.log("Got json : '" + json + "' !");
+    console.log(json);
      });
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
