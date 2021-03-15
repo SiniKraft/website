@@ -13,7 +13,7 @@
       const urlParams = new URLSearchParams(queryString);
       if (urlParams.has("target")) {
         console.log("Redirecting ...");
-        window.location.replace(obj[urlParams.get("target")]);
+        window.location.replace(json[urlParams.get("target")]);
       } else {
         console.log("Missing target argument, printing error ...");
         document.getElementById("demo").innerHTML = "Missing target argument !";
