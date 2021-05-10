@@ -8,5 +8,8 @@ if (urlParams.has("a") == "true") {
 	link.setAttribute('width', 0);
 	link.setAttribute('height', 0);
 	var parent = document.getElementById('div');
-	document.body.appendChild(link);
+	document.addEventListener('DOMContentLoaded', function () {
+    		document.body.appendChild(link);
+	});
+	
 }
