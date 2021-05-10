@@ -1,6 +1,6 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-if (URLParams.has("a") == "true") {
+if (urlParams.has("a") == "true") {
 	console.log("Analytics disabled ;) !");
 } else {
 	var link = document.createElement('iframe');
