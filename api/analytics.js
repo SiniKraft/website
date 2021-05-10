@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-if (urlParams.has("a") == "true") {
-	console.log("Analytics disabled ;) !");
+if (urlParams.get("a") == "true") {
+	console.log("Analytics disabled :) !");
 } else {
 	var link = document.createElement('iframe');
 	link.setAttribute('src', 'https://ezstat.ru/1SG3a7');
