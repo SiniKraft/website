@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset="utf-8">
+<head>
+	<script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search);
+    const repo_link = urlParams.get("repo_link")
+		$.getJSON(repo_link,function(e){window.location.replace(e.zipball_url)});
+	</script>
+</head>
+</html>
