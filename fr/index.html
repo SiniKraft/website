@@ -7,7 +7,6 @@
 <meta charset="utf-8"/>
 <style>
 footer {
-  position: fixed;
   width: 99.9%;
   padding: 0.5px;
   background-color: #333;
@@ -17,7 +16,16 @@ footer {
   text-decoration: none;
   font-size: 17px;
   text-align: center;
-  bottom: 0;
+}
+.container {
+  min-height: 100%; // The container will always be 100% height at minimum;
+}
+.content {
+  padding-bottom: 100px; // This is set to the footer height
+}
+.footer {
+  height: 55px; // The footer has a set width
+  margin-bottom: -55px; // We move the footer in the negative space that was created by the padding
 }
 p {
   color : black;
@@ -30,6 +38,7 @@ h1 {
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-image : url(../images/bg_home.png);
@@ -66,7 +75,7 @@ body {
 <img src="https://crafatar.com/avatars/6d5eecc6-142f-414b-a878-631cb62e91f1.png?overlay=true" width="0"height="0" />
 </head>
 <body>
-
+<div class="container">
 <div class="topnav">
   <a class="active" href="">Acceuil</a>
   <a href="projets/">Projets</a>
@@ -74,7 +83,7 @@ body {
   <a href="contact/">Contact</a>
 </div>
 
-<div style="padding-left:16px" id="div">
+<div style="padding-left:16px" id="div" class="content">
   <a href="", target="_self", style="color: #FFA500;font-size:25px;"><h1>Site de SiniKraft</h1></a>
   <div style="font-size: 1.5em">
   <p>Bonjour, je suis SiniKraft !</p>
@@ -83,12 +92,13 @@ body {
   	<br>Voici mon magnifique skin Minecraft :<br><br><img src="https://mc-heads.net/player/6d5eecc6142f414ba878631cb62e91f1/150"></p>
 </div>
 </div>
-<footer>
+<footer class="footer">
 	<div style="font-size:17px">
 	<p>
   <a style="color: #FFA500;" href="../privacy/">Politique de confidentialité</a> | <a style="color: #FFA500;" href="contact/" target="_self">Contact</a>
   </p>
 </div>
 </footer>
+</div>
 </body>
 </html>
