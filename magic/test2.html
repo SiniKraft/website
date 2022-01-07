@@ -15,8 +15,10 @@
                 width: 100%;
                 position: absolute;
                 z-index: 99;
-                max-width: 2000px;
-                max-height: 200px;
+                max-width: 1000px;
+                max-height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
             }
             body {
                 width: 100%;
@@ -30,6 +32,9 @@
                 background-size: cover;
                 background-attachment: fixed;
                 position: relative;
+            }
+            body:hover {
+              background-image: radial-gradient(transparent, #c653c6);
             }
             @keyframes background-gradient {
                 from {
