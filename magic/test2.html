@@ -3,6 +3,10 @@
     <meta charset="utf-8" />
     <head>
         <style>
+            #imgContainer {
+              align-items: center;
+              height: 100%;
+            }
             #_l {
                 position: fixed;
                 width: 100%;
@@ -18,7 +22,8 @@
                 max-width: 1000px;
                 max-height: 100%;
                 left: 50%;
-                transform: translateX(-50%);
+                transform: translate(-50%, -50%);
+                top: 50%;
             }
             body {
                 width: 100%;
@@ -75,6 +80,8 @@
     <body>
       <a id="_l" alt="www.sitew.fr" target="_blank" href="https://www.sitew.com/#utm_campaign=viewer__pro&utm_content=footer_link&utm_medium=viewer_link&utm_source=externhall-site.sitew.fr&utm_term=">
       <div id="body">
+      <div id="imgContainer">
+      </div>
       </div>
       </a>
     </body>
@@ -103,8 +110,9 @@
             _y = 0;
         }
         var img = document.createElement("img");
+        var _imgDiv = document.getElementById("imgContainer");
         img.src = "https://raw.githubusercontent.com/SiniKraft/website/main/magic/text2079.png";
         img.id = "logo";
-        div.appendChild(img);
+        _imgDiv.appendChild(img);
     </script>
 </html>
