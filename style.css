@@ -85,6 +85,9 @@ padding:0;
 .topnav a:hover {
   background-color: #ffcb6b;
   color: #bd7b00;
+  animation: hover_ani 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .topnav a.active {
@@ -96,4 +99,12 @@ iframe {
     height: 28.125vw; /* 100/56.25 = 560/315 = 1.778 le tout /2 */
     background: gray;
     border: 0.1em solid #FFA500;
+}
+@keyframes hover_ani {
+  from {
+    background-color: #ffcb6b;
+  }
+  to {
+    background-color: #ffb938;
+  }
 }
