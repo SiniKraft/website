@@ -1,4 +1,4 @@
-function open_link(repo) {
+function open_link(repo, id) {
   api_url = 'https://api.github.com/repos/SiniKraft/' + repo + '/releases/latest';
   var final_link = 'javascript:void(0)';
   $.getJSON(api_url, function(json) {
@@ -8,6 +8,12 @@ function open_link(repo) {
     		final_link = assets[key].browser_download_url;
     	}
     }
-    window.open(final_link, "_self");
+    document.getElementById(id).href = final_link;
   });
 }
+
+open_link('NoMoskito!', 'NoMoskito!');
+open_link('Gob-Fish', 'Gob Fish');
+open_link('SiniKraft-Store', 'SiniKraft STORE');
+open_link('Discord-Spammer', 'Discord Spammer');
+open_link('YoutubeDownloader', 'Youtube Downloader by Nicklor');
