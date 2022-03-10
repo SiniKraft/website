@@ -8,6 +8,6 @@ function open_link(repo) {
     		final_link = assets[key].browser_download_url;
     	}
     }
-    window.location.replace(final_link);
+    window.open(final_link, "_self");
   });
 }
