@@ -12,7 +12,7 @@ function open_link(repo, id) {
   });
 }
 
-open_link('NoMoskito!', 'NoMoskito!');
+open_link('NoMoskito', 'NoMoskito!');
 open_link('Gob-Fish', 'Gob Fish');
 open_link('SiniKraft-Store', 'SiniKraft STORE');
 open_link('Discord-Spammer', 'Discord Spammer');
